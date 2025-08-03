@@ -3,10 +3,10 @@
 #include <assert.h>
 
 char size(int cms) {
-    char sizeName = '\0';  //Initializes the result with a null character
-    if (cms < 38) {
+    char sizeName = '\0';  // default value
+    if (cms <= 38) {
         sizeName = 'S';
-    } else if (cms > 38 && cms < 43) {
+    } else if (cms > 38 && cms <= 42) {
         sizeName = 'M';
     } else if (cms > 42) {
         sizeName = 'L';
